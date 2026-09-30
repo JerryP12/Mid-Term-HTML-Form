@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form - YOUR_LASTNAME</title>
+    <style>
+         fieldset {
+            border: 1px solid #ccc; 
+            border-radius: 4px;     
+            margin-bottom: 15px; 
+            padding: 15px;          
+        }
+
+        fieldset p {
+            text-align: left;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+      <div style="text-align: center; max-width: 500px; margin: 0 auto;">
+
+    <h1>HTML Form</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label mortality for="first-name">First Name:</label><br>
+                <input type="text" id="first-name" name="firstName" required><br>
+
+                <label mortality for="middle-name">Middle Name:</label><br>
+                <input type="text" id="middle-name" name="middleName" required><br>
+
+                <label mortality for="last-name">Last Name:</label><br>
+                <input type="text" id="last-name" name="lastName" required><br>
+            </p>
+            <p>
+                <label for="email-address">Email Address:</label><br>
+                <input type="email" id="email-address" name="emailAddress" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                <input type="radio" id="gender-male" name="gender" value="Male">
+                <label for="gender-male">Male</label><br>
+                
+                <input type="radio" id="gender-female" name="gender" value="Female">
+                <label for="gender-female">Female</label><br>
+                
+                <input type="radio" id="gender-other" name="gender" value="Other">
+                <label for="gender-other">Other</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+            <p>
+                <input type="checkbox" id="hobby-Singing" name="hobbies" value="Singing">
+                <label for="hobby-Singing">Singing</label><br>
+
+                <input type="checkbox" id="hobby-reading" name="hobbies" value="Reading">
+                <label for="hobby-reading">Reading</label><br>
+
+                <input type="checkbox" id="hobby-sports" name="hobbies" value="Sports">
+                <label for="hobby-sports">Sports</label><br>
+
+                <input type="checkbox" id="hobby-Drawing" name="hobbies" value="Drawing">
+                <label for="hobby-Drawing">Drawing</label><br>
+
+                         <input type="checkbox" id="hobby-traveling" name="hobbies" value="Traveling">
+                <label for="hobby-traveling">Traveling</label><br>
+
+            </p>
+        </fieldset>
+
+        <p><label for="user-comments">Comments:</label><br>
+        <textarea id="user-comments" name="Comments" rows="5" cols="40" placeholder="Type your comments here"></textarea>
+        </p>
+
+        <p><button type="submit">Submit Form</button></p>
+
+    </form>
+</div>
+</body>
+</html>
